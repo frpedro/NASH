@@ -1,10 +1,398 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- Config Geral -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/chatscreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Chat">
+    tools:context=".Chat"
+    android:background="@color/nashbackground"
+    android:fontFamily="@font/jakartabold">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="0dp"
+            android:layout_y="0dp">
+
+                <!-- Barra de Separação -->
+                <View
+                    android:id="@+id/linechat"
+                    android:layout_width="340dp"
+                    android:layout_height="0.9dp"
+                    android:layout_x="32dp"
+                    android:layout_y="218dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#D9D9D9"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="553dp" />
+
+                <!-- Status Ausente (1 Semana) -->
+                <TextView
+                    android:id="@+id/ausente_status_sem"
+                    android:layout_width="117dp"
+                    android:layout_height="35dp"
+                    android:layout_x="117dp"
+                    android:layout_y="709dp"
+                    android:paddingVertical="4.dp"
+                    android:text="há 1 semana"
+                    android:fontFamily="@font/jakartaregular"
+                    android:textColor="#9E9EB8"
+                    android:textSize="13sp"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="600dp" />
+
+                <!-- Sophia Image -->
+                <ImageView
+                    android:id="@+id/sophia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="36dp"
+                    android:layout_y="679dp"
+                    android:src="@drawable/sophia"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="570dp" />
+
+                <!-- Barra de Separação -->
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="0.9dp"
+                    android:layout_x="33dp"
+                    android:layout_y="656dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#D9D9D9"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="458dp" />
+
+                <!-- Status Online -->
+                <TextView
+                    android:id="@+id/online_status2"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="110dp"
+                    android:layout_y="603dp"
+                    android:paddingVertical="4.dp"
+                    android:fontFamily="@font/jakartaregular"
+                    android:text="online agora"
+                    android:textColor="#9E9EB8"
+                    android:textSize="13sp"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="505dp" />
+
+                <!-- Isabella Name -->
+                <TextView
+                    android:id="@+id/isabella_name"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="110dp"
+                    android:fontFamily="@font/jakartabold"
+                    android:layout_y="572dp"
+                    android:text="Isabella"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="476dp" />
+
+                <!-- Isabella Image -->
+                <ImageView
+                    android:id="@+id/isabella"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="34dp"
+                    android:layout_y="571dp"
+                    android:src="@drawable/isabella"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="476dp" />
+
+                <!-- Indicador de Status Online -->
+                <ImageView
+                    android:id="@+id/in_online_statuschat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="83dp"
+                    android:layout_y="619dp"
+                    android:src="@drawable/online"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="78dp"
+                    tools:layout_editor_absoluteY="521dp" />
+
+                <!-- Barra de Separação -->
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="0.9dp"
+                    android:layout_x="34dp"
+                    android:layout_y="549dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#D9D9D9"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="165dp" />
+
+                <!-- Status Ausente (1 Semana) -->
+                <TextView
+                    android:id="@+id/ausente_status_sem2"
+                    android:layout_width="116dp"
+                    android:layout_height="31dp"
+                    android:layout_x="111dp"
+                    android:layout_y="494dp"
+                    android:paddingHorizontal="2dp"
+                    android:paddingVertical="3.dp"
+                    android:text="há 1 semana"
+                    android:fontFamily="@font/jakartaregular"
+                    android:textColor="#9E9EB8"
+                    android:textSize="13sp"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="407dp" />
+
+                <!-- Joca Name -->
+                <TextView
+                    android:id="@+id/joca_name"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="112dp"
+                    android:layout_y="458dp"
+                    android:fontFamily="@font/jakartabold"
+                    android:text="Joca"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="378dp" />
+
+                <!-- Joca Image -->
+                <ImageView
+                    android:id="@+id/joca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="34dp"
+                    android:layout_y="461dp"
+                    android:src="@drawable/joca"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="378dp" />
+
+                <!-- Barra de Separação -->
+                <View
+                    android:id="@+id/linechat2"
+                    android:layout_width="340dp"
+                    android:layout_height="0.9dp"
+                    android:layout_x="33dp"
+                    android:layout_y="435dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#D9D9D9"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="356dp" />
+
+                <!-- Status Online -->
+                <TextView
+                    android:id="@+id/online_status1"
+                    android:layout_width="116dp"
+                    android:layout_height="31dp"
+                    android:layout_x="108dp"
+                    android:layout_y="378dp"
+                    android:paddingHorizontal="1dp"
+                    android:paddingVertical="3.dp"
+                    android:text="online agora"
+                    android:fontFamily="@font/jakartaregular"
+                    android:textColor="#9E9EB8"
+                    android:textSize="13sp"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="306dp" />
+
+                <!-- Julia Name -->
+                <TextView
+                    android:id="@+id/julia_name"
+                    android:layout_width="96dp"
+                    android:layout_height="29dp"
+                    android:layout_x="108dp"
+                    android:layout_y="348dp"
+                    android:text="Júlia"
+                    android:fontFamily="@font/jakartabold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="277dp" />
+
+                <!-- Julia Image -->
+                <ImageView
+                    android:id="@+id/julia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="35dp"
+                    android:layout_y="347dp"
+                    android:src="@drawable/julia"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="277dp" />
+
+                <!-- Indicador de Status Online -->
+                <ImageView
+                    android:id="@+id/in_online_statuschat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="82dp"
+                    android:layout_y="396dp"
+                    android:src="@drawable/online"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="326dp" />
+
+                <!-- Chat Header -->
+                <View
+                    android:id="@+id/linechat1"
+                    android:layout_width="340dp"
+                    android:layout_height="0.9dp"
+                    android:layout_x="34dp"
+                    android:layout_y="321dp"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="#D9D9D9"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="553dp" />
+
+                <!-- Status Jogando -->
+                <TextView
+                    android:id="@+id/jogando_status"
+                    android:layout_width="63dp"
+                    android:layout_height="25dp"
+                    android:layout_x="106dp"
+                    android:layout_y="268dp"
+                    android:paddingHorizontal="3.dp"
+                    android:paddingVertical="4.dp"
+                    android:text="jogando..."
+                    android:fontFamily="@font/jakartaregular"
+                    android:textColor="#9E9EB8"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="207dp" />
+
+                <!-- Gabriel Name -->
+                <TextView
+                    android:id="@+id/gabriel_name"
+                    android:layout_width="96dp"
+                    android:layout_height="29dp"
+                    android:layout_x="106dp"
+                    android:layout_y="238dp"
+                    android:text="Gabriel"
+                    android:fontFamily="@font/jakartabold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    tools:layout_editor_absoluteX="104dp"
+                    tools:layout_editor_absoluteY="178dp" />
+
+                <!-- Gabriel Image -->
+                <ImageView
+                    android:id="@+id/gabriel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="33dp"
+                    android:layout_y="237dp"
+                    android:src="@drawable/gabriel"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="178dp" />
+
+                <!-- Status Ausente (2 días) -->
+                <TextView
+                    android:id="@+id/ausente_status_2d"
+                    android:layout_width="63dp"
+                    android:layout_height="25dp"
+                    android:layout_x="109dp"
+                    android:layout_y="164dp"
+                    android:paddingVertical="4.dp"
+                    android:text="há 2 dias"
+                    android:fontFamily="@font/jakartaregular"
+                    android:textColor="#9E9EB8"
+                    android:textSize="12sp"
+                    tools:ignore="DuplicateIds"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="110dp" />
+
+                <!-- Marcos Name -->
+                <TextView
+                    android:id="@+id/marcos_name"
+                    android:layout_width="96dp"
+                    android:layout_height="29dp"
+                    android:layout_x="109dp"
+                    android:layout_y="135dp"
+                    android:text="Marcos"
+                    android:fontFamily="@font/jakartabold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="81dp" />
+
+                <!-- Marcos Image -->
+                <ImageView
+                    android:id="@+id/marcos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="32dp"
+                    android:layout_y="134dp"
+                    android:src="@drawable/marcos"
+                    tools:layout_editor_absoluteX="29dp"
+                    tools:layout_editor_absoluteY="81dp" />
+
+                <!-- Sophia Name -->
+                <TextView
+                    android:id="@+id/sophia_name"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="117dp"
+                    android:layout_y="679dp"
+                    android:text="Sophia"
+                    android:fontFamily="@font/jakartabold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    tools:layout_editor_absoluteX="105dp"
+                    tools:layout_editor_absoluteY="571dp" />
+
+                <!-- Barra de navegação inferior -->
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="78dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_x="1dp"
+                    android:layout_y="812dp"
+                    android:background="@color/verdenash"
+                    app:itemIconTint="@color/white"
+                    app:itemTextColor="@color/white"
+                    app:labelVisibilityMode="labeled"
+                    app:menu="@menu/bottomnavbar"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-7dp"
+                    tools:layout_editor_absoluteY="813dp" />
+
+                <!-- Chat Header -->
+                <TextView
+                    android:id="@+id/chat_header_title"
+                    android:layout_width="67dp"
+                    android:layout_height="38dp"
+                    android:layout_x="170dp"
+                    android:layout_y="50dp"
+                    android:fontFamily="@font/jakartabold"
+                    android:text="Chat"
+                    android:textColor="@color/white"
+                    android:textFontWeight="500"
+                    android:textSize="28sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="172dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <!-- Indicador de Status Jogando -->
+                <ImageView
+                    android:id="@+id/in_jogando_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_x="80dp"
+                    android:layout_y="285dp"
+                    android:src="@drawable/jogando"
+                    tools:layout_editor_absoluteX="75dp"
+                    tools:layout_editor_absoluteY="227dp" />
+
+        </AbsoluteLayout>
+
+</LinearLayout>

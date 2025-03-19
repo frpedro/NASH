@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="nashbackground">#112744</color>
+    <color name="verdenash">#1B5E67</color>
+    <color name="cinzaapagado">#9E9EB8</color>
+    <color name="meu_background">#1E3E62</color>
+    <color name="meu_background_verdenash">#1B5E67</color>
+    <color name="blue">#112744</color>
+    <color name="input">#F0F2F5</color>
+    <color name="inputtext">#617D8A</color>
+    <color name="inputEnter">#1B5E67</color>
+    <color name="textBottom">#E9E4E4</color>
 </resources>

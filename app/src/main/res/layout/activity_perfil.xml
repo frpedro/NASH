@@ -1,10 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/perfilscreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Perfil">
+    android:background="@color/meu_background"
+    android:fontFamily="@font/jakartaregular"
+    tools:context=".Perfil"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-8dp"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="373dp"
+            android:layout_height="50dp"
+            android:layout_x="22dp"
+            android:layout_y="361dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="Adicionar"
+            android:fontFamily="@font/jakartabold"
+            app:cornerRadius="20dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="342dp"
+            android:layout_height="110dp"
+            android:layout_x="24dp"
+            android:layout_y="552dp"
+            android:fontFamily="@font/jakartaregular"
+            android:text="Olá! Sou o Bryan, um cara que adora uma boa conversa, um café quentinho e explorar novos lugares. Se você curte uma aventura, um papo descontraído e boas risadas, acho que a gente vai se dar bem!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="468dp" />
+
+        <TextView
+            android:id="@+id/titulodesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="23dp"
+            android:layout_y="516dp"
+            android:fontFamily="@font/jakartabold"
+            android:text="Sobre mim"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="433dp" />
+
+        <ImageView
+            android:id="@+id/capaperfil"
+            android:layout_width="522dp"
+            android:layout_height="337dp"
+            android:layout_x="-58dp"
+            android:layout_y="-53dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/fotobatman"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="-4dp" />
+
+        <ImageView
+            android:id="@+id/fotoperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="150dp"
+            android:layout_y="126dp"
+            app:srcCompat="@drawable/fotomlk"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="223dp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:layout_x="-1dp"
+            android:layout_y="817dp"
+            android:background="@color/verdenash"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottomnavbar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="721dp" />
+
+        <TextView
+            android:id="@+id/nomeperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="124dp"
+            android:layout_y="282dp"
+            android:fontFamily="@font/jakartabold"
+            android:text="Bryan Brandi"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <Button
+            android:id="@+id/forzaw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="224dp"
+            android:layout_y="675dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Forza"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <Button
+            android:id="@+id/r6w"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="23dp"
+            android:layout_y="675dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="R6"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="617dp" />
+
+        <Button
+            android:id="@+id/valorantw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="22dp"
+            android:layout_y="720dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Valorant"
+            android:textSize="9sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <Button
+            android:id="@+id/dotaw2"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="22dp"
+            android:layout_y="766dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="Dota2"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <Button
+            android:id="@+id/fornitew"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="124dp"
+            android:layout_y="676dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="Fortnite"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="617dp" />
+
+        <Button
+            android:id="@+id/csgow"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="124dp"
+            android:layout_y="720dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="CSGO"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="617dp" />
+
+        <Button
+            android:id="@+id/dotaw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="123dp"
+            android:layout_y="765dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="Dota2"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="580dp" />
+
+        <TextView
+            android:id="@+id/idadeperfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="178dp"
+            android:layout_y="324dp"
+            android:fontFamily="@font/jakartaregular"
+            android:text="19 anos"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="253dp" />
+
+        <Button
+            android:id="@+id/jogarw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="229dp"
+            android:layout_y="424dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Jogar"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <Button
+            android:id="@+id/estudarw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="23dp"
+            android:layout_y="424dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Estudar"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="214dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <Button
+            android:id="@+id/cozinharw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="24dp"
+            android:layout_y="466dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:text="Cozinhar"
+            android:fontFamily="@font/jakartabold"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+        <Button
+            android:id="@+id/academiaw"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_x="127dp"
+            android:layout_y="466dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Academia"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="384dp" />
+
+        <Button
+            android:id="@+id/viajarw"
+            android:layout_width="91dp"
+            android:layout_height="37dp"
+            android:layout_x="127dp"
+            android:layout_y="424dp"
+            android:backgroundTint="@color/meu_background_verdenash"
+            android:fontFamily="@font/jakartabold"
+            android:text="Viajar"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>

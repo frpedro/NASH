@@ -1,10 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!-- Config Geral -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/inicialscreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PaginaInicial">
+    tools:context=".PagInicial">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Imagem de fundo, configurada com opacidade e tonalidade escura. -->
+        <ImageView
+            android:id="@+id/imgtelainicial"
+            android:layout_width="699dp"
+            android:layout_height="1047dp"
+            android:layout_x="-82dp"
+            android:layout_y="-99dp"
+            android:alpha="0.9"
+            android:tint="#7B000000"
+            app:srcCompat="@drawable/inicialimage"
+            tools:ignore="MissingConstraints,UseAppTint"
+            tools:layout_editor_absoluteX="-58dp"
+            tools:layout_editor_absoluteY="-53dp" />
+
+        <!-- Texto descrevendo os interesses pessoais. -->
+        <TextView
+            android:id="@+id/infospessoaistelainicial"
+            android:layout_width="369dp"
+            android:layout_height="102dp"
+            android:layout_x="17dp"
+            android:layout_y="700dp"
+            android:fontFamily="@font/jakartaregular"
+            android:text="Curto games, tecnologia e boas conversas. Sempre em busca de novos desafios e novas experiências para aproveitar ao máximo! 🚀🎮 "
+            android:textColor="@color/white"
+            android:textFontWeight="375"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="551dp" />
+
+        <!-- Nome do usuário -->
+        <TextView
+            android:id="@+id/nameuser_ip"
+            android:layout_width="311dp"
+            android:layout_height="51dp"
+            android:layout_x="17dp"
+            android:layout_y="644dp"
+            android:fontFamily="@font/jakartabold"
+            android:text="Felipe Martins"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="36sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="500dp" />
+
+        <!-- Barra de navegação inferior -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="79dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="false"
+            android:layout_gravity="center"
+            android:layout_x="0dp"
+            android:layout_y="837dp"
+            android:background="@color/verdenash"
+            android:gravity="center"
+            app:itemIconSize="28dp"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottomnavbar"
+            tools:ignore="MissingConstraints" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>
